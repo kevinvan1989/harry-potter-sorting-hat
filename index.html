@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://kit.fontawesome.com/68f247f2fb.js"></script>
+</head>
+<body>
+  <div id="intro" class="center-screen">
+    <div class="intro__request">
+      <p class="intro__request--name intro__request--text">Can I have your name please???</p>
+    </div>
+    <div class="sorting-hat">
+      <img src="https://i1290.photobucket.com/albums/b539/kevinvan1989/Sorting_Hat_zps79mbejiu.png" alt="" class="sorting-hat__img">
+    </div>
+
+    <div class="intro__input center-screen u-my-1">
+      <input type="text" name="username" class="u-my-1">
+      <button id="sortFirst">Sort me!</button>
+    </div>
+  </div>
+
+  <!-- SECTION OVERLAY SCREEN -->
+  <div class="overlay-screen hide-onload">
+    <!-- Closing sign -->
+    <i class="far fa-times-circle closing x3"></i>
+
+    <!-- Dynamic loading icon -->
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+    <!-- Overlay box with content -->
+    <div class="overlay-contentbox">
+      <div class="contentbox__grid">
+        <div class="contentbox__grid--left">
+          <!-- Logo to be fed by API -->
+          <div class="department-logo"></div>
+        </div> <!-- END left-->
+
+        <div class="contentbox__grid--right">
+          <h2 class="house-name">[Name of the choosen house]</h2>
+          <p><span id="user">[name]</span>, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ab sed expedita repellendus sapiente nisi fugiat consectetur dignissimos laborum perspiciatis.</p>
+        </div>
+      </div> <!-- END grid-->
+    </div> <!-- END overlay-contentbox-->
+  </div> <!-- END overlay-screen -->
+
+  <script src="./scripts/jQuery.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
+
+

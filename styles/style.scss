@@ -1,0 +1,119 @@
+@import 'loader';
+@import 'houseColors';
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+}
+
+.u-py-1{
+  padding: 1rem 0;
+}
+
+.u-px-1{
+  padding: 0 1rem;
+}
+
+.u-my-1{
+  margin: 1rem 0;
+}
+
+.u-mx-1{
+  margin: 0 1rem;
+}
+
+.center-screen{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button{
+  display: block;
+}
+
+img.sorting-hat__img{
+  width: 30%;
+  display: inline-block;
+}
+
+#intro{
+  position: relative;
+  text-align: center;
+  min-height: 100vh;
+  background: rgba(255,255,255,.3);
+  
+  &::before{
+    content: '';
+    position: absolute;
+    background:   url('https://images.ctfassets.net/bxd3o8b291gf/3hollgS5QIcaUmoAWMsMEC/0ab7c45e0842488acdce82a76f6a7123/Hogwarts_PM_B4C37M1_GreatHallMourningCedricsDeath_Moment.jpg') center center / cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .intro__request{
+    background: linear-gradient(177.03139244047452deg, rgba(245, 177, 76,1) 24.83986928104575%,rgba(255, 222, 140,1) 64.18627450980392%);
+    width: 60%;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+
+    &--text{
+      padding: 1rem 0;
+    }
+  }
+}
+
+.overlay-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10% 10%;
+  background: darkblue;
+  width: 80%;
+  min-height: 60%;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+
+  .closing{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 2rem;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .overlay-contentbox{
+    position: relative;
+    display: none;
+    text-align: center;
+    min-height: 100%;
+
+    .contentbox__grid{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+
+  img{
+    max-width: 250px;
+  }
+}
+
+.hide-onload{
+  display: none;
+}
